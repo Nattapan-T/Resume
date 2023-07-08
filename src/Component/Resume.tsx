@@ -10,12 +10,12 @@ function Resume() {
         <h3 className="center">
           This is Nattapan Tammawonsa Brandnew junior dev^^
         </h3>
-        <p>Contact: 0918343194</p>
+        <p>Contact: 0918343194 / 0615285551</p>
         <p>
           Email: <a href="mailto:fongfah17@gmail.com">fongfah17@gmail.com</a>
         </p>
         <p>
-          Githup: <a href="https://github.com/Nattapan-T">Nattapan-T</a>
+          Github: <a href="https://github.com/Nattapan-T">Nattapan-T</a>
         </p>
       </header>
 
@@ -50,8 +50,10 @@ function Resume() {
         <h3>HARD SKILL</h3>
         <ul>
           <li>Python</li>
-          <li>Basic - React</li>
           <li>Basic - Typescript</li>
+          <li>Basic - React</li>
+          <li>HTML</li>
+          <li>CSS</li>
         </ul>
       </section>
 
@@ -70,7 +72,7 @@ function Resume() {
           </tr>
           <tr>
             <td>St Marry’s College</td>
-            <td>Science -Math Major</td>
+            <td>Science - Math Major</td>
             <td>2005 - 2016</td>
           </tr>
         </tbody>
@@ -91,8 +93,8 @@ function Resume() {
           </tr>
           <tr>
             <td>Bangkok flight service (BFS)</td>
-            <td>Internship Student</td>
-            <td>Nov 2018 - Feb 2020</td>
+            <td>Support Passenger Service Agent (Internship)</td>
+            <td>Nov 2019 - Feb 2020</td>
           </tr>
           <tr>
             <td>Government Saving Bank</td>
