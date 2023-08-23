@@ -10,9 +10,9 @@ function Resume() {
         <h3 className="center">
           This is Nattapan Tammawonsa Brandnew junior dev^^
         </h3>
-        <p>Contact: 0918343194 / 0615285551</p>
+        <p>Contact: 0918343194</p>
         <p>
-          Email: <a href="mailto:fongfah17@gmail.com">fongfah17@gmail.com</a>
+          Email: <a href="mailto:fnattapans@gmail.com">fnattapans@gmail.com</a>
         </p>
         <p>
           Github: <a href="https://github.com/Nattapan-T">Nattapan-T</a>
