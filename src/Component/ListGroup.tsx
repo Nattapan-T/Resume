@@ -4,8 +4,11 @@ interface Props {
   heading: string;
   onSelectItem: (item: string) => void;
 }
+//Hook - state hook mean we tell React that component can have Data or state
+//that can change over time
 function ListGroup({ items, heading, onSelectItem }: Props) {
   const [selectedIndex, setSelectedIndex] = useState(-1);
+  //arr[0] - variable / arr[1] - updater function
 
   return (
     <>

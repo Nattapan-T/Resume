@@ -4,8 +4,152 @@
   --background-color: #1a1a1a;
   --text-color: rgba(230, 230, 230, 0.87);
   --border-color: #341E08;
+  --sidebar-flex:1.5;
+  --condiv-flex:6;
+  --fontsize-nav:1.6rem;
+  --typing-font:1.5rem;
+}
+.App{
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Initially hidden off-screen to the left */
+  width: 250px;
+  height: 100%;
+  background-color: var(--background-color);
+  overflow-x: hidden;
+  transition: 0.3s;
 }
 
+.sidebar.open {
+  left: 0; /* Slides in when open */
+}
+
+.toggle-button {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+nav ul {
+  font-size: var(--fontsize-nav);
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 40px;
+}
+
+nav ul li a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+nav{
+  padding: 30px 30px 0px 30px;
+  flex: var(--sidebar-flex);
+  background: #1c1917;;
+}
+nav ul{
+  font-size: var(--fontsize-nav);
+  text-align: center;
+  list-style: none;
+}
+nav ul li{
+  margin: 40px;
+}
+nav ul li a{
+  color:var(--primary-color);
+  text-decoration: none;
+}
+.condiv{
+  padding: 100px;
+  background-color: f4f5f9;
+  flex: var(--condiv-flex);
+}
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.profilepic{
+  border-radius: 50%;
+  width: 400px;
+  margin: 30px;
+  position: relative;
+}
+.subprofilepic{
+  border-radius: 5%;
+  width: 100%;
+  margin: 30px;
+  max-height: 90%;
+  margin: auto;
+}
+.social{
+  margin-top: 20px;
+  display: flex;
+}
+.social i{
+  padding-right: 30px;
+  font-size: 30px;
+  flex-direction: column; 
+  align-items: center;
+}
+.typingeffect {
+  font-size:var(--typing-font);
+  margin-bottom: 30px;
+}
+.about{
+  text-align: center;
+}
+.suntopic{
+  margin: 10px 10px 30px 10px;
+}
+h1,h2,h3,h4{
+  margin: 10px;
+}
+.widecard{
+  display: flex;
+
+  margin: 30px 0px 30px 0px;
+  transition: 0.3s;
+  padding: .5rem;
+}
+.widecard :hover{
+  color: #FFF7ED;
+  background:#1c1917;
+  border-radius: 13px;
+  width: 100%;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+}
+.skill ul{
+  display: flex;
+  background-color: #1c1917;
+  color: #FFF7ED;
+  border-radius: 10px;
+  padding: 10px; 
+  list-style-type: none; 
+  width: 100%;
+  }
+.skill ul li{
+  list-style: none;
+  margin: 30px;
+}
+.active{
+  font-weight: bolder;
+}
 body {
   font-family: "Inter", sans-serif;
   line-height: 1.5;
