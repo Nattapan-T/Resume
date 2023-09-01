@@ -1,5 +1,5 @@
 import Social from "../Component/Social";
-const Contact = () => {
+const Contact: React.FC = () => {
   return (
     <div className="condiv">
       <h1 className="subtopic">Contact Me Via</h1>

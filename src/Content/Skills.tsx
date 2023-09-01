@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
 interface SkillProps {}
 
-const Skills: React.FC<SkillProps> = (props) => {
-  const [skillActive, setSkillActive] = useState("");
+const Skills: React.FC<SkillProps> = () => {
   const hardSkills: string[] = [
     "Python",
     "Java",

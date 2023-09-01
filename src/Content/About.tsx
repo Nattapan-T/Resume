@@ -1,6 +1,6 @@
 import Profilep from "../Image/ImgData";
 
-const About = () => {
+const About: React.FC = () => {
   return (
     <div className="condiv about">
       <h1 className="subtopic">About Me</h1>

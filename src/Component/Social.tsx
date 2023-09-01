@@ -1,6 +1,6 @@
-import React from "react";
+// import React from "react";
 
-const Social = () => {
+const Social: React.FC = () => {
   return (
     <div className="social">
       <a

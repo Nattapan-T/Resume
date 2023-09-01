@@ -3,7 +3,7 @@ import NavItems from "./NavItems";
 
 interface NavbarProps {}
 
-const Navbar: React.FC<NavbarProps> = (props) => {
+const Navbar: React.FC<NavbarProps> = () => {
   const [NavItemActive, setNavItemActive] = useState<string | null>(null);
 
   const activateItem = (item: string) => {

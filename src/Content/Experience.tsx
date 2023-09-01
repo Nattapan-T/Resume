@@ -1,5 +1,5 @@
 import Widecard from "../Component/Widecard";
-const Experience = () => {
+const Experience: React.FC = () => {
   return (
     <div className="condiv">
       <h1 className="subtopic">Experience</h1>
