@@ -1,12 +1,12 @@
 import "./Resume.css";
 import Navbar from "./Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "../content/Home";
-import About from "../content/About";
-import Education from "../content/Education";
-import Experience from "../content/Experience";
-import Skills from "../content/Skills";
-import Contact from "../content/Contact";
+import Home from "../Content/Home";
+import About from "../Content/About";
+import Education from "../Content/Education";
+import Experience from "../Content/Experience";
+import Skills from "../Content/Skills";
+import Contact from "../Content/Contact";
 
 function Resume() {
   return (

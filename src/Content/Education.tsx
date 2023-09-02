@@ -1,4 +1,4 @@
-import Widecard from "../component/Widecard";
+import Widecard from "../Component/Widecard";
 const Education: React.FC = () => {
   return (
     <div className="condiv">

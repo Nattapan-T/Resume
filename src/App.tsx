@@ -1,5 +1,5 @@
 // import { useState } from "react";
-import Resume from "./component/Resume";
+import Resume from "./Component/Resume";
 function App() {
   return <Resume />;
 
