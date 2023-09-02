@@ -1,4 +1,4 @@
-import Social from "../Component/Social";
+import Social from "../component/Social";
 const Contact: React.FC = () => {
   return (
     <div className="condiv">

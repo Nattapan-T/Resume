@@ -1,4 +1,4 @@
-import Widecard from "../Component/Widecard";
+import Widecard from "../component/Widecard";
 const Experience: React.FC = () => {
   return (
     <div className="condiv">

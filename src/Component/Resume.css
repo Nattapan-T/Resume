@@ -92,9 +92,10 @@ nav ul li a{
 }
 .subprofilepic{
   border-radius: 5%;
-  width: 100%;
-  margin: 30px;
-  max-height: 90%;
+  max-height:45dvh;
+  max-width:65dvw;
+  height:auto;
+  width:auto;
   margin: auto;
 }
 .social{

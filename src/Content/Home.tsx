@@ -1,5 +1,5 @@
 import React from "react";
-import Social from "../Component/Social";
+import Social from "../component/Social";
 import ReactTypingEffect from "react-typing-effect";
 
 const Home: React.FC = () => {
