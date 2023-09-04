@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import NavItems from "./NavItems";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 interface NavbarProps {}
 
@@ -22,6 +24,18 @@ const Navbar: React.FC<NavbarProps> = () => {
 
   return (
     <nav>
+      <button
+        id="nav-toggle"
+        className="toggle-button"
+        onClick={() => {
+          const navUl = document.querySelector("nav ul");
+          if (navUl) {
+            navUl.classList.toggle("open");
+          }
+        }}
+      >
+        <FontAwesomeIcon icon={faBars} />
+      </button>
       <ul>
         <NavItems item="Home" tolink="/" activenav={activateItem} />
         <NavItems item="About" tolink="/about" activenav={activateItem} />

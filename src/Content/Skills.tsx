@@ -25,16 +25,20 @@ const Skills: React.FC<SkillProps> = () => {
     <div className="condiv skill">
       <h1 className="subtopic">Skill Set</h1>
       <h2>Soft Skills</h2>
-      <ul>
+      <ul className="skills">
         {softSkills.map((skill, index) => (
-          <li key={index}>{skill}</li>
+          <li key={index} style={{ cursor: "pointer" }}>
+            {skill}
+          </li>
         ))}
       </ul>
 
       <h2>Hard Skills</h2>
-      <ul>
+      <ul className="skills">
         {hardSkills.map((skill, index) => (
-          <li key={index}>{skill}</li>
+          <li key={index} style={{ cursor: "pointer" }}>
+            {skill}{" "}
+          </li>
         ))}
       </ul>
     </div>

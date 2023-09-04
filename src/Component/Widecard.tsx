@@ -9,7 +9,7 @@ interface WidecardProps {
 
 const Widecard: React.FC<WidecardProps> = (props) => {
   return (
-    <div className="widecard">
+    <div className="widecard" style={{ cursor: "pointer" }}>
       <div className="widecon">
         <h3>{props.school}</h3>
         <h4 className="secondtext">{props.major}</h4>
