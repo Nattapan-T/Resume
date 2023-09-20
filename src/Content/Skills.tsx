@@ -1,16 +1,36 @@
 // import React, { useState } from "react";
-
 interface SkillProps {}
 
 const Skills: React.FC<SkillProps> = () => {
-  const hardSkills: string[] = [
-    "Python",
-    "Java",
-    "TypeScript",
-    "JavaScript",
-    "HTML",
-    "React",
-    "CSS",
+  const hardSkills = [
+    {
+      name: "Python",
+      image: "/Image/python.png",
+    },
+    {
+      name: "Java",
+      image: "/Image/java.png",
+    },
+    {
+      name: "TypeScript",
+      image: "/Image/typescript.png",
+    },
+    {
+      name: "JavaScript",
+      image: "/Image/js.png",
+    },
+    {
+      name: "HTML",
+      image: "/Image/html.png",
+    },
+    {
+      name: "React",
+      image: "/Image/structure.png",
+    },
+    {
+      name: "CSS",
+      image: "/Image/css-3.png",
+    },
   ];
   const softSkills: string[] = [
     "Energetic and responsible",
@@ -23,7 +43,7 @@ const Skills: React.FC<SkillProps> = () => {
 
   return (
     <div className="condiv skill">
-      <h1 className="subtopic">Skill Set</h1>
+      <h1 className="subtopic">Skill Set 🧠</h1>
       <h2>Soft Skills</h2>
       <ul className="skills">
         {softSkills.map((skill, index) => (
@@ -37,7 +57,7 @@ const Skills: React.FC<SkillProps> = () => {
       <ul className="skills">
         {hardSkills.map((skill, index) => (
           <li key={index} style={{ cursor: "pointer" }}>
-            {skill}{" "}
+            <img src={skill.image} alt={skill.name} />
           </li>
         ))}
       </ul>

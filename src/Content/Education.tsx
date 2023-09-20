@@ -2,7 +2,7 @@ import Widecard from "../Component/Widecard";
 const Education: React.FC = () => {
   return (
     <div className="condiv">
-      <h1 className="subtopic">Education</h1>
+      <h1 className="subtopic">Education 🎓</h1>
       <Widecard
         school="Suandusit University"
         major="Airline business management"

@@ -5,7 +5,11 @@ import ReactTypingEffect from "react-typing-effect";
 const Home: React.FC = () => {
   return (
     <div className="condiv home">
-      <img src="/Image/profile.jpeg" alt="Profile" className="profilepic" />
+      <img
+        src="/Image/MTXX_MR20230920_143147085.jpg"
+        alt="Profile"
+        className="profilepic"
+      />
       <ReactTypingEffect
         text={["This is Nattapan Tammawongsa", "Brandnew Junior Dev^^ "]}
         speed={100}

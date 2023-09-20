@@ -1,10 +1,10 @@
 import MBTI from "../Component/Mbit";
 const About: React.FC = () => {
   return (
-    <div className="condiv about">
+    <div className="condiv about ">
       <h1 className="subtopic">About Me</h1>
       <img
-        src="Image/MTXX_MH20230707_231515105.jpg"
+        src="Image/MTXX_MH20230920_120238400.jpg"
         className="subprofilepic"
       />
       <h2>Hi, I'm Fahsai. Just call me Fah.</h2>
