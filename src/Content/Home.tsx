@@ -9,6 +9,7 @@ const Home: React.FC = () => {
         src="/Image/MTXX_MR20230920_143147085.jpg"
         alt="Profile"
         className="profilepic"
+        style={{ cursor: "pointer" }}
       />
       <ReactTypingEffect
         text={["This is Nattapan Tammawongsa", "Brandnew Junior Dev^^ "]}

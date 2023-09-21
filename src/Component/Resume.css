@@ -107,6 +107,10 @@ nav ul li a{
   width: 400px;
   margin: 30px;
   position: relative;
+  box-shadow: 0 2px 30px #422006;
+}
+.profilepic:hover {
+  box-shadow: 0 0 15px #854d0e;
 }
 .subprofilepic{
   border-radius: 5%;
@@ -116,6 +120,7 @@ nav ul li a{
   width:auto;
   margin: auto;
 }
+
 .social{
   margin-top: 20px;
   display: flex;
@@ -146,7 +151,7 @@ h1,h2,h3,h4{
   margin: 0 auto;
   padding: 0.5rem;
   text-align: center;
-  width: 100%; /* Make the card take the full width of the container */
+  width: 100%; 
 }
 
 .widecard :hover{
@@ -154,7 +159,9 @@ h1,h2,h3,h4{
   background:#1c1917;
   border-radius: 13px;
   width: 100%;
-  box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+  box-shadow:rgba(0,0,0,0.3);
+  transform: translateY(-2px);
+  transition: transform 0.2s;
 }
 
 .skill ul{
@@ -173,7 +180,9 @@ h1,h2,h3,h4{
 .skills li:hover{
   color: var(--secondary-color);
   transition: color 0.5s;
-  opacity: 0.6;
+  opacity: 0.8;
+  transform: translateY(-2px);
+  transition: transform 0.2s;
 }
 .skill img {
   width: 6vh; 
@@ -181,7 +190,6 @@ h1,h2,h3,h4{
 }
 .active{
   font-weight: bolder;
-  /* padding: 0.3em; */
   color:#713F12;
 }
 body {
@@ -203,11 +211,12 @@ a {
   font-weight: 500;
   color: var(--primary-color);
   text-decoration: none;
-  transition: color 0.25s;
+  transition: color 0.25s, transform 0.2s;
 }
 
 a:hover {
   color: var(--secondary-color);
+  transform: translateY(-3px);
 }
 
 h1 {
