@@ -36,8 +36,8 @@ export const projects: Project[] = [
       "Monaco Editor with TypeScript and diff syntax highlighting; collapsible IssueCards with WAI-ARIA tabs and arrow-key navigation",
       "Deployed on Vercel Fluid Compute; rate-limit countdown UI handles Gemini quota gracefully",
     ],
-    badge: "Live",
-    demoImage: "/Image/pretina-demo.gif",
+    // badge: "Live",
+    // demoImage: "/Image/pretina-demo.gif",
     builtWith: "Built with Claude as AI pair-programmer",
   },
   {
