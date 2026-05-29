@@ -86,30 +86,56 @@ export const experience = [
 ];
 
 export const techSkills = [
-  { category: "Frontend", items: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Ant Design"] },
-  { category: "Design Systems", items: ["Design Tokens", "Component Architecture", "Figma Handoff", "Semantic Naming", "Codemod Automation"] },
-  { category: "State & Data", items: ["Redux Toolkit", "TanStack Query", "Zustand", "React Context"] },
-  { category: "Mobile", items: ["React Native", "Expo", "Android Studio", "Xcode"] },
-  { category: "Backend", items: ["Node.js", "NestJS", "Express.js", "Firebase Cloud Functions"] },
-  { category: "Database", items: ["Firebase Firestore", "PostgreSQL", "Prisma ORM"] },
-  { category: "Testing", items: ["Jest", "React Testing Library", "Playwright"] },
-  { category: "Tools & AI", items: ["Git", "GitHub", "GitLab", "Figma", "Postman", "Vercel", "Claude (AI pair-programming)"] },
-];
-
-export const hardSkills = [
-  { name: "TypeScript", image: "/Image/typescript.png" },
-  { name: "JavaScript", image: "/Image/js.png" },
-  { name: "React", image: "/Image/structure.png" },
-  { name: "Python", image: "/Image/python.png" },
-  { name: "Java", image: "/Image/java.png" },
-  { name: "HTML", image: "/Image/html.png" },
-  { name: "CSS", image: "/Image/css-3.png" },
+  {
+    category: "Frontend",
+    items: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Ant Design"],
+  },
+  {
+    category: "Design Systems",
+    items: [
+      "Design Tokens",
+      "Component Architecture",
+      "Figma Handoff",
+      "Semantic Naming",
+      "Codemod Automation",
+    ],
+  },
+  {
+    category: "State & Data",
+    items: ["Redux Toolkit", "TanStack Query", "Zustand", "React Context"],
+  },
+  {
+    category: "Mobile",
+    items: ["React Native", "Expo", "Android Studio", "Xcode"],
+  },
+  {
+    category: "Backend",
+    items: ["Node.js", "NestJS", "Express.js", "Firebase Cloud Functions"],
+  },
+  {
+    category: "Database",
+    items: ["Firebase Firestore", "PostgreSQL", "Prisma ORM"],
+  },
+  {
+    category: "Testing",
+    items: ["Jest", "React Testing Library", "Playwright"],
+  },
+  {
+    category: "Tools & AI",
+    items: [
+      "Git",
+      "Figma",
+      "Postman",
+      "Vercel",
+      "Claude (AI pair-programming)",
+    ],
+  },
 ];
 
 export const softSkills = [
   "Strong ownership & end-to-end accountability",
   "Fast learner — self-directed growth",
-  "Cross-functional collaboration (FE, BE, PM, UX)",
+  "Cross-functional collaboration",
   "Architecture thinking & scalability mindset",
   "Problem solver under production pressure",
   "Mentoring & knowledge sharing",

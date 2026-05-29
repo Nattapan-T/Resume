@@ -9,7 +9,6 @@ const roles = [
   "Full Stack (Node.js / NestJS)",
 ];
 
-
 const socialLinks = [
   {
     label: "GitHub profile",
@@ -172,11 +171,18 @@ const Home = () => {
             transition={{ delay: 0.8 }}
             className="border-t border-neutral-800 pt-6 w-full max-w-md"
           >
-            <p className="text-xs text-neutral-500 uppercase tracking-widest mb-1" aria-hidden="true">Open to</p>
-            <p className="text-sm text-neutral-300 font-medium">
-              Frontend Engineer · Product Engineer · Design Dev
+            <p
+              className="text-xs text-neutral-500 uppercase tracking-widest mb-1"
+              aria-hidden="true"
+            >
+              Open to
             </p>
-            <p className="text-xs text-neutral-500 mt-1">Bangkok · Hybrid · Remote (Global)</p>
+            <p className="text-sm text-neutral-300 font-medium">
+              Frontend Engineer · Mobile Developer(React Native)
+            </p>
+            <p className="text-xs text-neutral-500 mt-1">
+              Bangkok · Hybrid · Remote (Global)
+            </p>
           </motion.div>
         </motion.div>
       </div>

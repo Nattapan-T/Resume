@@ -1,13 +1,13 @@
 import { motion } from "motion/react";
 
 const infoCards = [
-  { label: "Nickname", value: "Fahsai" },
-  { label: "Experience", value: "3+ years" },
-  { label: "Current Role", value: "Frontend Engineer" },
-  { label: "Currently Exploring", value: "RSC · Next.js 16 · AI-assisted engineering" },
-  { label: "Personality", value: "ENFJ — The Protagonist" },
-  { label: "Languages", value: "Thai · English · Chinese (basic)" },
-  { label: "Based in", value: "Bangkok, Thailand" },
+  {
+    label: "What I enjoy",
+    value: "Constantly learning and figuring things out",
+  },
+  { label: "Recently focused on", value: "Design Systems & DX improvements" },
+  { label: "Background", value: "Airline industry → Software engineering" },
+  { label: "Mindset", value: "Curious, adaptable, product-oriented" },
 ];
 
 const About = () => {
@@ -35,30 +35,46 @@ const About = () => {
           <img
             src="/Image/MTXX_MH20230920_120238400.jpg"
             alt="Nattapan Tammawongsa, Frontend Engineer based in Bangkok"
-            className="w-40 h-40 rounded-2xl object-cover border border-neutral-700 flex-shrink-0"
+            className="w-40 h-40 rounded-2xl object-cover border border-neutral-700 shrink-0"
           />
           <div className="space-y-4 text-neutral-400 leading-relaxed">
             <h2 className="text-xl font-semibold text-white">
               Hi, I'm Fahsai 👋
             </h2>
             <p>
-              Frontend Engineer with 3+ years of production experience building
+              Frontend Engineer with 3 years of production experience building
               web and mobile applications using React, Next.js, TypeScript, and
-              React Native. I started as a career switcher from the airline
-              industry and grew into end-to-end frontend ownership — from Design
-              System architecture to mobile app store deployment.
+              React Native. I transitioned from the airline industry into
+              software engineering and grew into owning frontend systems
+              end-to-end — from Design System architecture and scalable
+              component libraries to mobile app deployment on both iOS and
+              Android.
             </p>
             <p>
-              Currently at 7 Solutions Co., Ltd., leading Design System
-              migration and building scalable component libraries for a Next.js
-              platform. I enjoy working across the stack when needed (Node.js,
-              NestJS, Firebase) and I'm focused on maintainable, high-quality
-              code that teams can build on.
+              Most recently at 7 Solutions Co., Ltd., I worked across frontend
+              architecture, Design System migration, and internal product
+              development for large-scale Next.js platforms. My experience
+              includes building reusable UI systems, improving developer
+              workflows through automation and codemods, integrating REST APIs,
+              and contributing across the stack with Node.js, NestJS, Firebase,
+              and PostgreSQL when needed.
+            </p>
+            <p>
+              Previously at AMR Asia, I helped build and maintain EV charging
+              platforms across both web and mobile, including Back Office
+              systems, real-time dashboards, analytics tools, and React Native
+              applications released to the App Store and Google Play.
+            </p>
+            <p>
+              I enjoy building maintainable frontend architecture, scalable UI
+              systems, and product-focused experiences that teams can
+              confidently build on over time.
             </p>
           </div>
         </div>
 
-        <dl className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-4">
+        {/* Info cards */}
+        <dl className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-3">
           {infoCards.map(({ label, value }) => (
             <div
               key={label}
@@ -71,6 +87,24 @@ const About = () => {
             </div>
           ))}
         </dl>
+
+        <div className="mt-8 border border-neutral-800 bg-neutral-900/50 rounded-2xl p-6">
+          <p className="text-xs text-neutral-500 uppercase tracking-widest mb-4">
+            What drives me
+          </p>
+          <blockquote className="text-neutral-300 leading-relaxed space-y-4">
+            <p>
+              "I think one thing about me is that I learn very quickly when I'm
+              genuinely interested in a problem."
+            </p>
+            {/* <p>"A lot of the Design System work I did came from exploring solutions independently — especially around migration, tooling, and reusable components."</p> */}
+            <p>
+              "I really enjoy building systems that improve consistency and
+              developer experience, and I'd love to continue growing in that
+              direction."
+            </p>
+          </blockquote>
+        </div>
       </motion.div>
     </section>
   );
