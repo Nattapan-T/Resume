@@ -6,8 +6,18 @@ const contacts = [
     value: "fnattapans@gmail.com",
     href: "mailto:fnattapans@gmail.com",
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className="w-5 h-5">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={1.5}
+        className="w-5 h-5"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+        />
       </svg>
     ),
   },
@@ -36,8 +46,18 @@ const contacts = [
     value: "+66-91-834-3194",
     href: "tel:+66918343194",
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className="w-5 h-5">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={1.5}
+        className="w-5 h-5"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+        />
       </svg>
     ),
   },
@@ -46,8 +66,18 @@ const contacts = [
     value: "nattapan-fs-resume.vercel.app",
     href: "https://nattapan-fs-resume.vercel.app",
     icon: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className="w-5 h-5">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9" />
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={1.5}
+        className="w-5 h-5"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9"
+        />
       </svg>
     ),
   },
@@ -55,28 +85,49 @@ const contacts = [
 
 const Contact = () => {
   return (
-    <section className="min-h-screen px-6 py-12 pt-20 md:pt-12 max-w-3xl mx-auto" aria-labelledby="contact-heading">
+    <section
+      className="min-h-screen px-6 py-12 pt-20 md:pt-12 max-w-3xl mx-auto"
+      aria-labelledby="contact-heading"
+    >
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <p className="text-amber-500 text-xs uppercase tracking-widest mb-2">Reach out</p>
-        <h1 id="contact-heading" className="text-3xl font-bold text-white mb-3">Contact Me</h1>
-        <p className="text-neutral-400 mb-8">Open to Frontend, React Native, and Full Stack opportunities. Feel free to reach out!</p>
+        <p className="text-amber-500 text-xs uppercase tracking-widest mb-2">
+          Reach out
+        </p>
+        <h1 id="contact-heading" className="text-3xl font-bold text-white mb-3">
+          Contact Me
+        </h1>
+        <p className="text-neutral-400 mb-8">
+          Open to Frontend, React Native, and Full Stack opportunities. Feel
+          free to reach out!
+        </p>
 
-        {/* Download CV */}
         <motion.a
           href="/Nattapan_Tammawongsa_CV.pdf"
-          download="Nattapan_Tammawongsa_CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.15 }}
           className="inline-flex items-center gap-3 px-5 py-3 rounded-xl bg-amber-500 text-black font-semibold text-sm hover:bg-amber-400 transition-colors mb-8 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0f0f]"
           aria-label="Download Nattapan Tammawongsa CV as PDF"
         >
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="w-4 h-4" aria-hidden="true">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+            className="w-4 h-4"
+            aria-hidden="true"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+            />
           </svg>
           Download CV (PDF)
         </motion.a>
@@ -93,12 +144,14 @@ const Contact = () => {
               transition={{ delay: i * 0.08 + 0.2 }}
               className="flex items-center gap-4 bg-neutral-900 border border-neutral-800 rounded-xl p-5 hover:border-amber-500/30 hover:bg-neutral-800 transition-all group"
             >
-              <span className="p-2.5 rounded-lg bg-neutral-800 text-amber-400 group-hover:bg-amber-500/10 transition-colors flex-shrink-0">
+              <span className="p-2.5 rounded-lg bg-neutral-800 text-amber-400 group-hover:bg-amber-500/10 transition-colors shrink-0">
                 {icon}
               </span>
               <div className="min-w-0">
                 <p className="text-xs text-neutral-500 mb-0.5">{label}</p>
-                <p className="text-sm text-white font-medium truncate">{value}</p>
+                <p className="text-sm text-white font-medium truncate">
+                  {value}
+                </p>
               </div>
             </motion.a>
           ))}
